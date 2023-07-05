@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <header id="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#">{{ .Site.Title }}</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="/">Home</a>
+                        <a class="nav-item nav-link active" href="/posts/">Posts</a>
+                        <a class="nav-item nav-link active" href="/about/">About Us</a>
+                        <a class="nav-item nav-link active" href="/contact/">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="site-main">
+        <div class="container">
+            {{ block "main" .}}{{ end }}
+        </div>
+    </main>
+
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-1">
+                    <div class="footer-logo">
+                        <img src="/images/site-logo.png" alt="">
+                    </div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                    </p>
+                    <div>
+                        <img src="/images/social-icons.png" width="240px" height="47px" alt="">
+                    </div>
+                </div>
+                <div class="footer-2">
+                    <p class="footer-headings">Quick Links</p>
+                    <div class="footer-nav d-flex flex-column">
+                        <a>Home</a>
+                        <a>About Us</a>
+                        <a>Services</a>
+                        <a>Contact Us</a>
+                    </div>
+                </div>
+                <div class="footer-3">
+                    <p class="footer-headings">Contact Us</p>
+                    <div class="footer-contact">
+                        <p class="footer-address">
+                            121 King St, Melbourne VIC 3000, Australia
+                        </p>
+                        <p class="footer-mail">
+                            Info@example.com
+                        </p>
+                        <p class="footer-contactno">
+                            +1 (888) 123-5678
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-4">
+                    <p class="footer-headings">
+                        Subscribe
+                    </p>
+                    <p>
+                        Follow our newsletter to stay updated about us.
+                    </p>
+                    <div class="email-address">
+                        <input type="text" placeholder="Enter Address">
+                        <img src="/images/sub-button.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sec-footer">
+                <div class="footer-line">
+                    <hr>
+                </div>
+                <div class="sub-footer-content">Copyright © 2023 Cerise Tech Solutions</div>
+            </div>
+        </div>
+    </section>
+    <!-- <footer id="site-footer" class="bg-dark text-white pb-1 pt-1">
+        <div class="copyright text-center mt-4 mb-3">
+            Copyright &copy; 2023 {{ .Site.Title }}
+        </div>
+    </footer> -->
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

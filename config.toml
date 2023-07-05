@@ -1,0 +1,8 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Cerise Tech Solutions'
+paginate = 3 
+
+
+[params]
+dateFormat = "Jan 2, 2006, 3:04PM"
