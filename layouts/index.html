@@ -1,6 +1,29 @@
 {{ define "main" }}
 <section class="home-container">
-    <div class="home-heading">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/home-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/home-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/home-3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- <div class="home-heading">
         <p class="text-center font-weight-bold">IT & Software Business</p>
         <div>
             <h2 class="text-center">Everything You Need For</h2>
@@ -12,43 +35,7 @@
             <button type="button" class="btn btn-primary home-btn">Contact Today</button>
             <button type="button" class="btn btn-light home-btn">Learn More</button>
         </div>
-        <!-- <div class="row">
-            <div class="col-sm-3 mb-3 mb-sm-0">
-                <div class="card home-card">
-                    <div class="img">
-                        <img src="/images/icon-1.png" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Highly Customizable</h5>
-                        <p class="card-text">Morbi sagittis hendrerit nulla insp ultriciesras ipsdem</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card home-card">
-                    <div class="img">
-                        <img src="/images/home-icon-2.png" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Technology</h5>
-                        <p class="card-text">Proin scelerisque portt itor ipsdem feugiat maurise arius</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card home-card">
-                    <div class="img">
-                        <img src="/images/home-icon-3.png" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Project Management</h5>
-                        <p class="card-text">Scelerisque porttitor ipsdem feus emn varius tellus elus
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    </div>
+    </div> -->
 </section>
 
 <div class="cards-section">
@@ -59,7 +46,7 @@
                     <img src="/images/icon-1.png" alt="">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Highly Customizable</h5>
+                    <h5 class="card-title">Customized Softwares</h5>
                     <p class="card-text">Morbi sagittis hendrerit nulla insp ultriciesras ipsdem</p>
                 </div>
             </div>
@@ -70,7 +57,7 @@
                     <img src="/images/home-icon-2.png" alt="">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Technology</h5>
+                    <h5 class="card-title">Latest Technologies</h5>
                     <p class="card-text">Proin scelerisque portt itor ipsdem feugiat maurise arius</p>
                 </div>
             </div>
@@ -81,7 +68,7 @@
                     <img src="/images/home-icon-3.png" alt="">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Project Management</h5>
+                    <h5 class="card-title">Device Management</h5>
                     <p class="card-text">Scelerisque porttitor ipsdem feus emn varius tellus elus
                     </p>
                 </div>
@@ -157,7 +144,7 @@
     </div>
 </section>
 
-<section class="services-section mt-5">
+<!-- <section class="services-section mt-5">
     <div class="services d-flex">
         <div class="services-left">
             <img src="/images/services-1.webp" width="759.6px" height="536.4px" alt="">
@@ -179,7 +166,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- <section class="experience-section">
     <div class="container experience-div">
@@ -217,9 +204,7 @@
     </div>
 </section> -->
 
-<hr>
-
-<section class="offer-section">
+<section class="offer-section" style="margin-top: 4rem;">
     <div class="offer-div">
         <div class="offer-left">
             <h6 class="h6">What We Offer</h6>

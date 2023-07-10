@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 body {
   margin: 0;
@@ -7,46 +7,50 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-/* .cts-logo > img {
-    filter: brightness(320%);
-} */
-
 .nav-item {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.home-container {
+  margin-top: 76px;
+}
+
+.carousel-inner {
+  height: 500px;
 }
 
 .img img {
   max-width: 100%;
 }
 
-.home-container {
+/* .home-container {
   display: flex;
   overflow-x: hidden;
   max-width: 100%;
   min-height: 712px;
   background-image: url(/images/home.jpg);
-  background-size: 1750px;
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-content: center;
+  background-size: cover;
+  /* background-repeat: no-repeat;
+  background-position: center; */
+/* justify-content: center;
   align-items: center;
   color: rgb(253, 252, 252);
-}
+}  */
 
 .home-heading {
   display: flex;
   flex-direction: column;
 }
 
-.home-heading>p {
+.home-heading > p {
   font-size: larger;
   font-weight: 800;
 }
 
-.home-heading h2 {
+.home-heading > h2 {
   color: white;
   z-index: 1000;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 50px;
 }
@@ -66,24 +70,22 @@ body {
 }
 
 .cards-section {
-  margin: -85px 0px 0px;
+  margin: 20px 0px 0px;
 }
 
 .row {
-  /* margin-top: 100px; */
   justify-content: center;
 }
 
 .home-card {
   width: 364px;
   height: 170px;
-  /* background-color: rgb(162, 153, 214); */
-  background-image: linear-gradient(180deg,#460ba5 0%,#7a0dfc 100%);
+  background-image: linear-gradient(180deg, #460ba5 0%, #7a0dfc 100%);
   color: white;
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
-  align-items: center;
+  justify-content: center; 
+  /* align-items: center; */
   z-index: 10;
 }
 
@@ -104,7 +106,7 @@ body {
   color: #104cba;
 }
 
-.hero-content-1>h2 {
+.hero-content-1 > h2 {
   font-size: 36px;
   font-weight: 600;
 }
@@ -164,7 +166,7 @@ body {
   border-radius: 10px;
 }
 
-.card-body {
+.featured-services .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,8 +191,8 @@ body {
     flex-direction: column; */
 }
 
-.services-left-div>p,
-.services-left-div>h2 {
+.services-left-div > p,
+.services-left-div > h2 {
   display: flex;
   flex-direction: column;
   margin-left: 70px;
@@ -202,7 +204,7 @@ body {
   font-size: 40px;
 }
 
-.services-btn a {
+.services-btn > a {
   color: orangered;
   margin-left: 70px;
   font-size: 16px;
@@ -388,7 +390,8 @@ body {
 .footer-section {
   height: 486px;
   padding: 100px 0px 0px;
-  background-image: url(/images/footer-bg.webp);
+  /* background-image: url(/images/footer-bg.webp); */
+  background-color: black;
   max-width: 100%;
   background-size: cover;
   color: white;
@@ -411,7 +414,7 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-1 p {
+.footer-1 > p {
   margin-bottom: 30px;
   line-height: 25px;
 }
@@ -429,14 +432,20 @@ body {
 }
 
 .footer-contact {
-  line-height: 20px;
+  line-height: 25px;
 }
 
 .footer-4 {
   width: 265px;
 }
 
-.email-address input {
+.footer-links > a {
+  text-decoration: none;
+  line-height: 35px;
+  color: white;
+}
+
+/* .email-address input {
   width: 210px;
   position: relative;
   height: 52px;
@@ -451,7 +460,7 @@ body {
   height: 52px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-}
+} */
 
 .footer-line {
   width: 85%;
