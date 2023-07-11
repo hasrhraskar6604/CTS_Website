@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+    margin-top: 76px;
+}
+
+.about-banner {
+    /* width: 1349px; */
+    width: 100%;
+    height: 300px;
+    background-image: url(/images/about-banner.webp);
+    background-size: cover;
+    position: relative;
+} 
+
+.about-content {
+    position: absolute;
+    top: 90px;
+    left: 573px;
+}
+
+.about-title {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+#crumbs {
+    text-align: center;
+    color: white;
+}
+
+#crumbs > a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* About Hero */
+
+.tick-img > img{
+    width: 28.8px;
+    height: 28.8px;
+    margin-right: 15px;
+}
+
+/* Cards and History */
+.about-cards-history {
+    height: 920px;
+    /* background-color: beige; */
+}
+
+.about-cards {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-1 {
+    width: 350px;
+    height: 155px;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-1:hover {
+    background-color: #103ab1;
+    color: white;
+}
+
+.about-icon > img {
+    width: 49.52px;
+    height: 45.52px;
+    margin-right: 15px;
+}
+
+.about-icon:hover {
+    color: white;
+}
+
+.about-card-content > p {
+    margin-bottom: 0;
+}
+
+.history {
+    margin-top: 8rem;
+}
+
+.history-tick-img {
+    width: 18.52px;
+    height: 18.52px;
+    margin-right: 15px;
+}
